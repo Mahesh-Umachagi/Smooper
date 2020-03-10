@@ -1,0 +1,79 @@
+﻿[
+    {
+        
+        "id": 1,
+        "FirstName": "Abhishek",
+        "LastName": "Patil",
+        "PhoneNumber": 8889991234,
+        "Address": "Unkal Cross",
+        "City": "Hubli",
+        "Zip": 580031,
+        "Email": "abhi@gmail.com"
+    },
+    {
+        
+        "id": 2,
+        "FirstName": "Barath",
+        "LastName": "Nayak",
+        "PhoneNumber": 9988776655,
+        "Address": "Vijaynagar",
+        "City": "Banglore",
+        "Zip": 580001,
+        "Email": "barath@gmail.com"
+    },
+    {
+        
+        "id": 3,
+        "FirstName": "Chetan",
+        "LastName": "Surag",
+        "PhoneNumber": 9876543210,
+        "Address": "ShivajiNagar",
+        "City": "Pune",
+        "Zip": 530451,
+        "Email": "chetan@gmail.com"
+    },
+    {
+        
+        "id": 4,
+        "FirstName": "Deepak",
+        "LastName": "Patel",
+        "PhoneNumber": 9080766754,
+        "Address": "Adajan",
+        "City": "Surat",
+        "Zip": 540023,
+        "Email": "deepak@gmail.com"
+    },
+    {
+        
+        "id": 5,
+        "FirstName": "Fizan",
+        "LastName": "Sheik",
+        "PhoneNumber": 8863456738,
+        "Address": "Kachiguda",
+        "City": "Hyderabad",
+        "Zip": 578022,
+        "Email": "fizan@gmail.com"
+    },
+    {
+       
+        "id": 6,
+        "FirstName": "Girish",
+        "LastName": "Shet",
+        "PhoneNumber": 7767879807,
+        "Address": "Bandra",
+        "City": "Mumbai",
+        "Zip": 534678,
+        "Email": "girish@gmail.com"
+    },
+    {
+      
+        "id": 7,
+        "FirstName": "Harish",
+        "LastName": "Kulkarni",
+        "PhoneNumber": 9009008765,
+        "Address": "Kormangala",
+        "City": "Banglore",
+        "Zip": 580005,
+        "Email": "harish@gmail.com"
+    }
+]

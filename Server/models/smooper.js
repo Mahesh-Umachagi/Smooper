@@ -1,16 +1,17 @@
-const mongoose = require ('mongoose');
+const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema
-const smooperSchema = new Schema ({
-  id : Number,
-  FirstName : String,
-  LastName : String,
-  PhoneNumber : Number,
-  Address : String, 
-  City : String,
-  Zip : Number,
-  Email : String,
-  
+const smooperSchema = new Schema({
+  id: Number,
+  FirstName: String,
+  LastName: String,
+  PhoneNumber: Number,
+  Address: String,
+  City: String,
+  Zip: Number,
+  Email: String,
+  CompanyDetails: String
+
 })
 
-module.exports = mongoose.model ('contacts', smooperSchema,)
+module.exports = mongoose.model('contacts', smooperSchema, )

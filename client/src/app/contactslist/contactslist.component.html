@@ -12,6 +12,11 @@
     </thead>
     <tbody>
       <tr *ngFor="let l of list">
+        <td><a [routerLink]="[ '/contactsdetails', l.id]">{{l.id}}</a></td>
+        <td>{{l.FirstName}}</td>
+        <td>{{l.LastName}}</td>
+        <td>{{l.PhoneNumber}}</td>
+      </tr> 
         <td>
           <a [routerLink]="['/contactsdetails', l.id]">{{ l.id }}</a>
         </td>

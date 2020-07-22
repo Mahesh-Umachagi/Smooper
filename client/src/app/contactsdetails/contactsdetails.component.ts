@@ -1,39 +1,43 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
-import { ContactsapiService } from '../contactsapi.service';
+import { Component, OnInit } from "@angular/core";
+import { Router, ActivatedRoute } from "@angular/router";
+import { ContactsapiService } from "../contactsapi.service";
 
 @Component({
-  selector: 'app-contactsdetails',
-  templateUrl: './contactsdetails.component.html',
-  styleUrls: ['./contactsdetails.component.css']
+  selector: "app-contactsdetails",
+  templateUrl: "./contactsdetails.component.html",
+  styleUrls: ["./contactsdetails.component.css"]
 })
 export class ContactsdetailsComponent implements OnInit {
-  id; 
+  id;
   details;
   FirstName;
   LastName;
   PhoneNumber;
   Address;
-  City
+  City;
   Zip;
   Email;
+  CompanyDetails;
 
-  constructor(private contactsdetails:ContactsapiService, private router:Router, private route:ActivatedRoute) {
-    this.id = route.snapshot.paramMap.get('id');
+  constructor(
+    private contactsdetails: ContactsapiService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {
+    this.id = route.snapshot.paramMap.get("id");
     console.log(this.id);
-    contactsdetails.getcontactsdetails (this.id, (result) => {
-      this.details=result;
+    contactsdetails.getcontactsdetails(this.id, result => {
+      this.details = result;
       this.FirstName = this.details.FirstName;
       this.LastName = this.details.LastName;
       this.PhoneNumber = this.details.PhoneNumber;
       this.Address = this.details.Address;
       this.City = this.details.City;
       this.Zip = this.details.Zip;
-      this.Email = this.details.Email      
+      this.Email = this.details.Email;
+      this.CompanyDetails = this.details.CompanyDetails;
     });
-   }
-
-  ngOnInit() {
   }
 
+  ngOnInit() {}
 }
